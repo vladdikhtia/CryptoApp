@@ -9,9 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = CoinsViewModel()
+    @State private var isError = false
+    
     var body: some View {
         VStack {
-            Text("\(viewModel.coin): \(viewModel.price)")
+            if let errorMessage = viewModel.errorMessage {
+                Text(viewModel.errorMessage!)
+                    .multilineTextAlignment(.center)
+                    
+            } else {
+                Text("\(viewModel.coin): \(viewModel.price)")
+            }
         }
         .padding()
     }
