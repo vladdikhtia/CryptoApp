@@ -9,14 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = CoinsViewModel()
-    @State private var isError = false
     
     var body: some View {
-        VStack {
+    
+            
             List(viewModel.coins) { coin in
-                Text(coin.name)
+                HStack(spacing: 12) {
+                    Text("\(coin.marketCapRank)")
+                        .foregroundStyle(.gray)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(coin.name)
+                            .fontWeight(.semibold)
+                        
+                        Text(coin.symbol.uppercased())
+                            
+                    }
+                }
+                .font(.footnote)
             }
-        }
+            .overlay {
+                if let error = viewModel.errorMessage {
+                    Text(error)
+                }
+            }
+           
       
     }
 }
