@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31973F2D2BA09510001F14EC /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31973F2C2BA09510001F14EC /* CoinDataService.swift */; };
 		31F203192B9E570A00F85839 /* CryptoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F203182B9E570A00F85839 /* CryptoAppApp.swift */; };
 		31F2031B2B9E570A00F85839 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F2031A2B9E570A00F85839 /* ContentView.swift */; };
 		31F2031D2B9E570B00F85839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F2031C2B9E570B00F85839 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31973F2C2BA09510001F14EC /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		31F203152B9E570A00F85839 /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F203182B9E570A00F85839 /* CryptoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppApp.swift; sourceTree = "<group>"; };
 		31F2031A2B9E570A00F85839 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +36,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31973F2B2BA094FD001F14EC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				31973F2C2BA09510001F14EC /* CoinDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		31F2030C2B9E570A00F85839 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		31F2032A2B9E57C100F85839 /* AllCoins */ = {
 			isa = PBXGroup;
 			children = (
+				31973F2B2BA094FD001F14EC /* Service */,
 				31F203302B9E57E900F85839 /* ViewModel */,
 				31F2032F2B9E57E600F85839 /* View */,
 				31F2032E2B9E57DE00F85839 /* Model */,
@@ -188,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31973F2D2BA09510001F14EC /* CoinDataService.swift in Sources */,
 				31F2031B2B9E570A00F85839 /* ContentView.swift in Sources */,
 				31F203342B9E5C5D00F85839 /* CoinsViewModel.swift in Sources */,
 				31F203192B9E570A00F85839 /* CryptoAppApp.swift in Sources */,
