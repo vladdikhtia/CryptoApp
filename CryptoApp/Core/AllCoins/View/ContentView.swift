@@ -13,15 +13,11 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            if let errorMessage = viewModel.errorMessage {
-                Text(viewModel.errorMessage!)
-                    .multilineTextAlignment(.center)
-                    
-            } else {
-                Text("\(viewModel.coin): \(viewModel.price)")
+            List(viewModel.coins) { coin in
+                Text(coin.name)
             }
         }
-        .padding()
+      
     }
 }
 
