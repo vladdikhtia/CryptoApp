@@ -31,13 +31,13 @@ class CoinsViewModel: ObservableObject {
 //                self.coins = coins ?? []
 //            }
 //        }
-        service.fetchCoinsWithResult { result in
+        service.fetchCoinsWithResult { [weak self] result in // all referenses in class, are weak instead of strong, this block is self contain peace of code
             DispatchQueue.main.async {
                 switch result {
                 case .success(let coins):
-                    self.coins = coins
+                    self?.coins = coins // weak refernce
                 case .failure(let error):
-                    self.errorMessage = error.localizedDescription
+                    self?.errorMessage = error.localizedDescription // weak refernce
                 }
             }
         }
