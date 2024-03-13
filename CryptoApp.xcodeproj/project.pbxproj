@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3163A4912BA26638006935F9 /* CoinAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163A4902BA26638006935F9 /* CoinAPIError.swift */; };
 		31973F2D2BA09510001F14EC /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31973F2C2BA09510001F14EC /* CoinDataService.swift */; };
 		31973F2F2BA0ED97001F14EC /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31973F2E2BA0ED97001F14EC /* Coin.swift */; };
 		31973F312BA0F83C001F14EC /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31973F302BA0F83C001F14EC /* CoinView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3163A4902BA26638006935F9 /* CoinAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPIError.swift; sourceTree = "<group>"; };
 		31973F2C2BA09510001F14EC /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		31973F2E2BA0ED97001F14EC /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		31973F302BA0F83C001F14EC /* CoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				31973F2E2BA0ED97001F14EC /* Coin.swift */,
+				3163A4902BA26638006935F9 /* CoinAPIError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				31F203342B9E5C5D00F85839 /* CoinsViewModel.swift in Sources */,
 				31973F312BA0F83C001F14EC /* CoinView.swift in Sources */,
 				31973F2F2BA0ED97001F14EC /* Coin.swift in Sources */,
+				3163A4912BA26638006935F9 /* CoinAPIError.swift in Sources */,
 				31F203192B9E570A00F85839 /* CryptoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
